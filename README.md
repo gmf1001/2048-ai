@@ -39,9 +39,3 @@ You can use this 2048 AI to control the 2048 browser game. The browser control c
 Enable Firefox remote debugging by setting the about:config options "devtools.debugger.remote-enabled" and "devtools.chrome.enabled" to true, then quit Firefox and restart it with the `--start-debugger-server 32000` command-line option.
 
 Open the game in a new tab, then run `2048.py -b firefox` and watch the game! The `-p` option can be used to set the port to connect to.
-
-### Chrome
-
-Enable Chrome remote debugging by quitting it and then restarting it with the `remote-debugging-port` command-line switch (e.g. `google-chrome --remote-debugging-port=9222`).
-
-Open the game in a new tab, then run `2048.py -b chrome` and watch the game! The `-p` option can be used to set the port to connect to.
