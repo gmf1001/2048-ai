@@ -140,7 +140,7 @@ class Keyboard2048Control(Generic2048Control):
     def get_board(self):
         res = self.execute(
             '''
-            var res = [];
+            var res = []
             var tiles = tileContainer.children;
             for(var i=0; i<tiles.length; i++)
                 res.push(tiles[i].className);
@@ -158,9 +158,9 @@ class Keyboard2048Control(Generic2048Control):
                     pos = int(m.group(1)), int(m.group(2))
             board[pos[1]-1][pos[0]-1] = int(round(math.log(tval, 2)))
 
-        return board
+        return board;
 
-    def execute_move(self, move):
+    def execute_move01(self, move):
         key = [38, 40, 37, 39][move]
         self.send_key_event('keydown', key)
         time.sleep(0.01)
