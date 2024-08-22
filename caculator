@@ -29,7 +29,7 @@ if (isset($_POST['calculate'])) {
     }
 
     // 输出结果
-    echo "<h3>Result: $result</h3>";
+    echo "Result: " . htmlspecialchars($result, ENT_QUOTES, 'UTF-8') . "";
 }
 ?>
 
