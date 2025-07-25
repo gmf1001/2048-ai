@@ -1,5 +1,6 @@
 <?php
     $num1 = $_POST['num1'];
+    $num4 = $_POST['num4'];
 
     // 进行计算
     switch ($operator) {
