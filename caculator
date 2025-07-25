@@ -1,6 +1,5 @@
 <?php
 // 检查是否有表单提交
-if (isset($_POST['calculate'])) {
     $num1 = $_POST['num1'];
 
     // 进行计算
