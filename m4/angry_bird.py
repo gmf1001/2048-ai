@@ -234,8 +234,8 @@ class AngryBirdsGme:  # 应该是 AngryBirdsGame
 
 # Bug 10: 缩进和实例化错误
 if __name__ == "__main__":
-try:
-    game = AngryBirdsGme()  # 错误：类名拼写错误
-    game.run()
-except Exception as e:
+    try:
+        game = AngryBirdsGme()  # 错误：类名拼写错误
+        game.run()
+    except Exception as e:
         print(f"游戏出错: {e}")
