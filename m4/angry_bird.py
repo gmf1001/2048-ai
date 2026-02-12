@@ -2,6 +2,8 @@ import pygame
 import math
 import random
 
+# 增加注释
+
 # 初始化pygame
 pygame.init()
 
